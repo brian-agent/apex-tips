@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { supabase } from "./lib/supabase";
 import AppNavbar from "./components/Navbar";
 import PaymentModal from "./components/PaymentModal";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
 
 import Home from "./pages/Home";
 import Games from "./pages/Games";
@@ -62,6 +64,8 @@ export default function App() {
           }
         />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>
     </BrowserRouter>
   );

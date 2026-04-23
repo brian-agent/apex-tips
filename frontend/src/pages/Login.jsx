@@ -65,7 +65,12 @@ export default function Login() {
             >
               {loading ? <Spinner size="sm" /> : "Log In"}
             </Button>
-          </Form>
+            <p className="text-center text-muted mt-2 mb-0">
+              <Link to="/forgot-password" className="text-warning">
+                Forgot password?
+              </Link>
+            </p>
+            </Form>
 
           <p className="text-center text-muted mt-3 mb-0">
             No account?{" "}
